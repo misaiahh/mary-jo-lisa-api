@@ -10,7 +10,7 @@
       socket.on('connect', function () {
         console.log('Connected');
 
-        socket.emit('ping', 'ping');
+        socket.emit('ping', 'Jen');
       });
       socket.on('ping', function (data) {
         console.log('event', data);
