@@ -22,7 +22,7 @@ export class AuthService {
     return null;
   }
 
-  async login(user: any) {
+  async login(user: any): Promise<any> {
     const payload = { username: user.username, sub: user.userId };
 
     return {
